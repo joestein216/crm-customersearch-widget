@@ -1,0 +1,9 @@
+{{#power-select
+  search=(action "searchCustomers")
+  selected=selected
+  onchange=(action "viewCustomerDetail")
+as |customer|
+}}
+  {{customer.fullName}}
+{{/power-select}}
+{{outlet}}

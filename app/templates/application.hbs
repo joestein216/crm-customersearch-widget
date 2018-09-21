@@ -1,5 +1,6 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<h1>Customer Search Demo</h1>
+Token:<br>
+{{textarea value=token cols="80" rows="6"}}<br>
+<button {{action "setToken" token}}>Set Token</button><br>
+<br>
 {{outlet}}
